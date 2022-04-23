@@ -1,0 +1,1228 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="" href="http://example.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="" href="http://example.com/atom.xml" />
+<link rel="alternate" type="application/json" title="" href="http://example.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CPacifico:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="python" />
+
+
+<link rel="canonical" href="http://example.com/2022/04/23/python/python%E9%80%9F%E6%9F%A5/">
+
+
+
+  <title>
+python包速查 - Python笔记 |
+Iphi zhou =  = 小小鲷的学习笔记</title>
+<meta name="generator" content="Hexo 6.1.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">python包速查
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2022-04-23 11:07:38">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-04-23T11:07:38+08:00">2022-04-23</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>4.1k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>4 分钟</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Iphi zhou</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/006x3CuTly8h1io7fb98rj31hc0u0tge.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/006x3CuTly8h1ioay458wj31hc0u0dre.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/006x3CuTly8h1io71ztnej31hc0u0tha.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/006x3CuTly8h1ioajoalnj31hc0u0dkt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/006x3CuTly8h1io2bzqtmj31hc0u0do7.jpg"></li>
+          <li class="item" data-background-image="https://tva4.sinaimg.cn/large/006x3CuTly8h1io2r1bfij31hc0u0wob.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/python/" itemprop="item" rel="index" title="分类于 Python笔记"><span itemprop="name">Python笔记</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/04/23/python/python%E9%80%9F%E6%9F%A5/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="Iphi Zhou">
+    <meta itemprop="description" content="小小鲷的学习笔记, ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h3 id="查找安装包的位置"><a class="markdownIt-Anchor" href="#查找安装包的位置">#</a> 查找安装包的位置</h3>
+<p>Anaconda3 /envs/Test6/lib/python3.9/site-packages</p>
+<h3 id="logging模块"><a class="markdownIt-Anchor" href="#logging模块">#</a> logging 模块</h3>
+<p>import logging</p>
+<p>日志格式规范，操作简化，日志分级管理，普通配置，复杂配置</p>
+<p>日志级别：CRITICAL&gt;ERROR&gt;WARNING&gt;INFO&gt;DEBUG</p>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>实现</th>
+<th>参数</th>
+<th>附加</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>将 debug 打印到标准输出</td>
+<td>logging.debug(“debug message”)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>将 info 打印到标准输出</td>
+<td><span class="exturl" data-url="aHR0cDovL2xvZ2dpbmcuaW5mbw==">logging.info</span>(“info message”)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>将 warning 打印到标准输出</td>
+<td>logging.warning(“warning message”)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>将 error 打印到标准输出</td>
+<td>logging.error(“error message”)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>将 critical 打印到标准输出</td>
+<td>logging.critical(“critical message”)</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>“灵活配置日志级别，日志格式，输出位置”</p>
+<table>
+<thead>
+<tr>
+<th>类型功能</th>
+<th>API 参数</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>logging.basicConfig () 设置日志级别</td>
+<td>level = logging.DEBUG</td>
+<td></td>
+</tr>
+<tr>
+<td>输出格式，handler 的日志显示格式</td>
+<td>format = '%(asctime)s % ’</td>
+<td></td>
+</tr>
+<tr>
+<td>指定日期格式</td>
+<td>datefmt = ‘%a,%b, % Y’</td>
+<td></td>
+</tr>
+<tr>
+<td>指定文件名</td>
+<td>filename = ‘test.log’</td>
+<td></td>
+</tr>
+<tr>
+<td>文件打开方式，默认为 “a” , 可指定为 &quot;w&quot;</td>
+<td>filemode = ‘a’</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>fh = logging.FileHandler (‘test1’, encoding = ‘utf-8’) 创建 handler 用于写入日志文件</p>
+<p>sh= logging.streanHandler () 创建一个 handler 用于输出到控制台</p>
+<p>formatter = logging.Formatter(’%(asctime)s-%(name)s-%(levelname)s -%(message)s ')</p>
+<p>fh.setLevel (logging.DEBUG) 设置输出级别</p>
+<p>sh.setLevel(logging.DEBUG)</p>
+<h3 id="shutil模块"><a class="markdownIt-Anchor" href="#shutil模块">#</a> shutil 模块</h3>
+<p>import shutil</p>
+<p>sh 和 util 的结合，在 python 中集成了 sh 操作和 util 操作 sh 指的是 shell，util 指的是 until</p>
+<table>
+<thead>
+<tr>
+<th>类型功能</th>
+<th>API</th>
+<th>参数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>复制文件</td>
+<td>shutil.copy(fsrc，path)</td>
+<td>源文件，目标地址，返回复制之后的路径</td>
+</tr>
+<tr>
+<td>复制文件</td>
+<td>shutil.copy(fsrc，path)</td>
+<td>源文件，目标地址，返回复制之后的路径</td>
+</tr>
+<tr>
+<td>拷贝</td>
+<td>shutil.copyfileobj(fsrc, fdst)</td>
+<td>源文件，复制到 fdst，缓冲区大小</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="glob模块"><a class="markdownIt-Anchor" href="#glob模块">#</a> glob 模块</h3>
+<p>import glob</p>
+<p>glob 模块用来查找文件目录和文件，常见方法有 glob.glob () 和 glob.iglob () 可以和 find 功能进行类比</p>
+<p>glob 返回一个数据类型 list</p>
+<p>iglob 返回一个迭代器 （generator object ， iterable）</p>
+<h3 id="通配符"><a class="markdownIt-Anchor" href="#通配符">#</a> 通配符</h3>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*</td>
+<td>代表 0 或者多个字符</td>
+</tr>
+<tr>
+<td>？</td>
+<td>代表一个字符</td>
+</tr>
+<tr>
+<td>[]</td>
+<td>匹配指定范围字符，如 [0-9] 数字</td>
+</tr>
+</tbody>
+</table>
+<h3 id="numpy中的基本用法"><a class="markdownIt-Anchor" href="#numpy中的基本用法">#</a> Numpy 中的基本用法</h3>
+<p>import numpy as np   创建 array 类型的元素</p>
+<p><strong>元素创建：</strong></p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>运算类型</th>
+<th>运算 return</th>
+<th>运算修改</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>创建 array</td>
+<td></td>
+<td>np.arange( high dim list  )</td>
+<td></td>
+</tr>
+<tr>
+<td>创建全零矩阵 X</td>
+<td></td>
+<td>X = np.zeros( (m,n) )</td>
+<td>元组控制维度</td>
+</tr>
+<tr>
+<td>创建全一矩阵 X</td>
+<td></td>
+<td>X = np.ones((m,n), dtype = “int32”)</td>
+<td>dtype 控制类型</td>
+</tr>
+<tr>
+<td>创建单位矩阵 X</td>
+<td></td>
+<td>X = np.eye(m)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>维度变换：</strong></p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>运算类型</th>
+<th>运算 return</th>
+<th>运算修改</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>矩阵 X</td>
+<td>对应维度扩展</td>
+<td>np.</td>
+<td></td>
+</tr>
+<tr>
+<td>矩阵 X</td>
+<td>求逆</td>
+<td>X.I or np.linalg.inv(X)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>矩阵运算：</strong></p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>运算类型</th>
+<th>运算 return</th>
+<th>运算修改</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>矩阵 X 或向量 X</td>
+<td>求转置</td>
+<td>X.T or X.transpose()</td>
+<td></td>
+</tr>
+<tr>
+<td>矩阵 X</td>
+<td>求逆</td>
+<td>X.I or np.linalg.inv(X)</td>
+<td></td>
+</tr>
+<tr>
+<td>矩阵 X，Y</td>
+<td>矩阵相乘 X*Y</td>
+<td>np.dot(X ,  Y)</td>
+<td></td>
+</tr>
+<tr>
+<td>矩阵 X, Y</td>
+<td>对应元素相乘</td>
+<td>X * Y</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="torch中的基本用法"><a class="markdownIt-Anchor" href="#torch中的基本用法">#</a> Torch 中的基本用法</h3>
+<p>import torch as t 创建 tensor 类型的元素。</p>
+<p>Tensor 要养成向量化计算的习惯</p>
+<p><strong>数据类型：</strong></p>
+<table>
+<thead>
+<tr>
+<th>数据类型</th>
+<th>CPU</th>
+<th>GPU</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>32bit 浮点</td>
+<td>t.FloatTensor</td>
+<td>t.cuda.FloatTensor</td>
+</tr>
+<tr>
+<td>64bit 浮点</td>
+<td>t.DoubleTensor</td>
+<td>同</td>
+</tr>
+<tr>
+<td>16bit 半精度浮点</td>
+<td>None</td>
+<td>t.cuda.HalfTensor</td>
+</tr>
+<tr>
+<td>8bit 无符号整形（0~255）</td>
+<td>t.ByteTensor</td>
+<td>同</td>
+</tr>
+<tr>
+<td>8bit 有符号整形 （-128~127）</td>
+<td>t.CharTensor</td>
+<td></td>
+</tr>
+<tr>
+<td>16bit 有符号整形</td>
+<td>t.ShortTensor</td>
+<td></td>
+</tr>
+<tr>
+<td>32bit 有符号整形</td>
+<td>t.IntTensor</td>
+<td></td>
+</tr>
+<tr>
+<td>64bit 有符号整形</td>
+<td>t.LongTensor</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>元素创建：</strong></p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>运算类型</th>
+<th>运算 return</th>
+<th>运算修改</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>创建 tensor</td>
+<td></td>
+<td>t.Tensor(a, b, c , d)</td>
+<td>a 维，b 维，c 维，d 维</td>
+</tr>
+<tr>
+<td>全 1 张量</td>
+<td></td>
+<td>t.ones( （a,b,c,d）)</td>
+<td></td>
+</tr>
+<tr>
+<td>全 0 张量</td>
+<td></td>
+<td>t.zeros(（a,b,c,d） )</td>
+<td></td>
+</tr>
+<tr>
+<td>单位张量</td>
+<td></td>
+<td>t.eye(m)</td>
+<td></td>
+</tr>
+<tr>
+<td>自定义创建</td>
+<td></td>
+<td>t.arange(1,10,step)</td>
+<td>一维，设置范围和步长</td>
+</tr>
+<tr>
+<td>自定义创建</td>
+<td></td>
+<td>t.linespace(1,10,steps)</td>
+<td>一维，设置个数 steps</td>
+</tr>
+<tr>
+<td>随机创建</td>
+<td></td>
+<td>rand/randn (size)</td>
+<td>均匀 / 标准分布</td>
+</tr>
+<tr>
+<td>随机创建</td>
+<td></td>
+<td>normal(mean,std,tupleSize)</td>
+<td>均方标准差，</td>
+</tr>
+<tr>
+<td>随机创建</td>
+<td></td>
+<td>uniform(from,to,tupleSize)</td>
+<td>均匀范围</td>
+</tr>
+<tr>
+<td>类型转换</td>
+<td></td>
+<td>b = X.type(t.FloatTensor)</td>
+<td></td>
+</tr>
+<tr>
+<td>类型转换</td>
+<td></td>
+<td>a = t.from_numpy(b)</td>
+<td>numpy 的 b 转为张量 a</td>
+</tr>
+<tr>
+<td>类型转换</td>
+<td></td>
+<td>b = a.numpy()</td>
+<td>a 张量转为 b 的 numpy</td>
+</tr>
+<tr>
+<td>软复制，硬复制</td>
+<td></td>
+<td>expand() repeat()</td>
+<td></td>
+</tr>
+<tr>
+<td>随机种子</td>
+<td></td>
+<td>t.manual_seed()</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>信息获取：</strong></p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>运算类型</th>
+<th>运算 return</th>
+<th>运算修改</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>张量 X</td>
+<td></td>
+<td>X.size()</td>
+<td>size ()[a], 获得 a 维的维度</td>
+</tr>
+<tr>
+<td>形状 X</td>
+<td></td>
+<td>X.shape()</td>
+<td>获得 tensor 的形状</td>
+</tr>
+<tr>
+<td>高级索引</td>
+<td></td>
+<td>X.index_select(input,dim,index)</td>
+<td>在指定维度 dim 上选取，选某些行，某些列</td>
+</tr>
+<tr>
+<td>X</td>
+<td></td>
+<td>masked_select(input, mask)</td>
+<td>a [a&gt;0] 使用 ByteTensor 选取</td>
+</tr>
+<tr>
+<td>X</td>
+<td></td>
+<td>t.non_zero(X)</td>
+<td>X 中非零元素的下标</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>gather 和 scatter 操作</td>
+<td>特定放置</td>
+</tr>
+<tr>
+<td></td>
+<td>保存</td>
+<td>t.save(a,“a.pth”)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>加载</td>
+<td>b = t.load(“a.pth”)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>维度变换：</strong></p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>运算类型</th>
+<th>运算 return</th>
+<th>运算修改</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X</td>
+<td>改变 Size，形状</td>
+<td>X.view(2,3)</td>
+<td>注意前后维数一致</td>
+</tr>
+<tr>
+<td>X</td>
+<td>降维</td>
+<td>X.squeeze(), X.unsqueeze(m)</td>
+<td>m 表示第 m 个维度</td>
+</tr>
+<tr>
+<td>X</td>
+<td>resize 调整</td>
+<td>X.resize()</td>
+<td>可以开辟新空间</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>张量运算：</strong></p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>运算类型</th>
+<th>运算 return</th>
+<th>运算修改</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X，Y</td>
+<td>相加</td>
+<td>X+Y,  t.add(X,Y)   ,X.add(Y)</td>
+<td></td>
+</tr>
+<tr>
+<td>函数</td>
+<td></td>
+<td>cos,sin,asin,atahn2,sigmoid,tanh</td>
+<td></td>
+</tr>
+<tr>
+<td>运算</td>
+<td></td>
+<td>t.pow, t.div, t.sqrt , t.abs, t.log, t.fmod</td>
+<td></td>
+</tr>
+<tr>
+<td>取整</td>
+<td></td>
+<td>t.ceil，floor</td>
+<td></td>
+</tr>
+<tr>
+<td>四舍五入</td>
+<td></td>
+<td>t.round</td>
+<td></td>
+</tr>
+<tr>
+<td>只保留整数</td>
+<td></td>
+<td>t.trunc</td>
+<td></td>
+</tr>
+<tr>
+<td>截断</td>
+<td></td>
+<td>t.clamp（X，min，max）</td>
+<td></td>
+</tr>
+<tr>
+<td>X 元素</td>
+<td>均值 / 中位数 / 众数</td>
+<td>X.mean/median/mode  (X)</td>
+<td></td>
+</tr>
+<tr>
+<td>X 元素求和</td>
+<td></td>
+<td>X.sum(X)</td>
+<td></td>
+</tr>
+<tr>
+<td>X 元素</td>
+<td>标准差 / 方差</td>
+<td>X.std/var</td>
+<td></td>
+</tr>
+<tr>
+<td>X 元素</td>
+<td>累加累乘</td>
+<td>X.cumsum,cumprod</td>
+<td></td>
+</tr>
+<tr>
+<td>X 元素</td>
+<td>取最大最小</td>
+<td>max/min(tensor, dim )</td>
+<td>取 dim 最大</td>
+</tr>
+<tr>
+<td>X,Y</td>
+<td></td>
+<td>min(X,Y)</td>
+<td>比较</td>
+</tr>
+<tr>
+<td>X 张量</td>
+<td>求迹</td>
+<td>X.trace()</td>
+<td></td>
+</tr>
+<tr>
+<td>X 张量</td>
+<td>对角线元素</td>
+<td>X.diag()</td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>矩阵乘法</td>
+<td><span class="exturl" data-url="aHR0cDovL1gubW0=">X.mm</span>(Y)</td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>矩阵运算</td>
+<td>X.addmm(Y), X.addmv(Y)</td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>转置、求逆</td>
+<td>X.t() / X.inverse()</td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>奇异值分解</td>
+<td>X.svd()</td>
+<td></td>
+</tr>
+<tr>
+<td>X</td>
+<td>内积，外积</td>
+<td>X.dot() , X.cross()</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>b.expand_as(Y)</td>
+<td>means??</td>
+</tr>
+</tbody>
+</table>
+<h3 id="variable"><a class="markdownIt-Anchor" href="#variable">#</a> Variable</h3>
+<p>from torch.autograd import Variable as V</p>
+<p>V 是一个基于树结构的存储了梯度计算图的张量模型</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>运算类型</th>
+<th>运算 return</th>
+<th>运算修改</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>X.grad</td>
+<td></td>
+<td>X.grad</td>
+<td>存储梯度</td>
+</tr>
+<tr>
+<td></td>
+<td>自动计算梯度</td>
+<td>V(Tensor, requires_grad = True)</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="torchvisiontransforms"><a class="markdownIt-Anchor" href="#torchvisiontransforms">#</a> torchvision.transforms</h3>
+<p><strong>常见的图像变换，这里总结一共有四大类，方便大家索引</strong></p>
+<p><strong>裁剪（Crop）</strong><br>
+中心裁剪：transforms.CenterCrop<br>
+ 随机裁剪：transforms.RandomCrop<br>
+ 随机长宽比裁剪：transforms.RandomResizedCrop<br>
+ 上下左右中心裁剪：transforms.FiveCrop<br>
+ 上下左右中心裁剪后翻转，transforms.TenCrop</p>
+<p><strong>翻转和旋转（Flip and Rotation）</strong><br>
+依概率 p 水平翻转：transforms.RandomHorizontalFlip (p=0.5)<br>
+ 依概率 p 垂直翻转：transforms.RandomVerticalFlip (p=0.5)<br>
+ 随机旋转：transforms.RandomRotation</p>
+<p><strong>图像变换（resize）transforms.Resize</strong><br>
+ 标准化：transforms.Normalize<br>
+ 转为 tensor，并归一化至 [0-1]：transforms.ToTensor<br>
+ 填充：transforms.Pad<br>
+ 修改亮度、对比度和饱和度：transforms.ColorJitter<br>
+ 转灰度图：transforms.Grayscale<br>
+ 线性变换：transforms.LinearTransformation ()<br>
+ 仿射变换：transforms.RandomAffine<br>
+ 依概率 p 转为灰度图：transforms.RandomGrayscale<br>
+ 将数据转换为 PILImage：transforms.ToPILImage<br>
+ 将 lambda 应用作为变换：transforms.Lambda</p>
+<p><strong>对 transforms 操作，使数据增强更灵活</strong><br>
+从给定的一系列 transforms 中选一个进行操作：transforms.RandomChoice (transforms)，<br>
+给一个 transform 加上概率，依概率进行操作 ：transforms.RandomApply (transforms, p=0.5)<br>
+ 将 transforms 中的操作随机打乱：transforms.RandomOrder</p>
+
+      <div class="tags">
+          <a href="/tags/python/" rel="tag"><i class="ic i-tag"></i> python</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2022-04-22 21:33:44" itemprop="dateModified" datetime="2022-04-22T21:33:44+08:00">2022-04-22</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="Iphi Zhou 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="Iphi Zhou 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="Iphi Zhou 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>Iphi Zhou <i class="ic i-at"><em>@</em></i>
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="http://example.com/2022/04/23/python/python%E9%80%9F%E6%9F%A5/" title="python包速查">http://example.com/2022/04/23/python/python速查/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2022/04/23/math/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva4.sinaimg.cn&#x2F;large&#x2F;006x3CuTly8h1io7slpugj31hc0u0125.jpg" title="离散数学">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 数学杂谈</span>
+  <h3>离散数学</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9F%A5%E6%89%BE%E5%AE%89%E8%A3%85%E5%8C%85%E7%9A%84%E4%BD%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text"> 查找安装包的位置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#logging%E6%A8%A1%E5%9D%97"><span class="toc-number">2.</span> <span class="toc-text"> logging 模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#shutil%E6%A8%A1%E5%9D%97"><span class="toc-number">3.</span> <span class="toc-text"> shutil 模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#glob%E6%A8%A1%E5%9D%97"><span class="toc-number">4.</span> <span class="toc-text"> glob 模块</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%9A%E9%85%8D%E7%AC%A6"><span class="toc-number">5.</span> <span class="toc-text"> 通配符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#numpy%E4%B8%AD%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95"><span class="toc-number">6.</span> <span class="toc-text"> Numpy 中的基本用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#torch%E4%B8%AD%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95"><span class="toc-number">7.</span> <span class="toc-text"> Torch 中的基本用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#variable"><span class="toc-number">8.</span> <span class="toc-text"> Variable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#torchvisiontransforms"><span class="toc-number">9.</span> <span class="toc-text"> torchvision.transforms</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li class="active"><a href="/2022/04/23/python/python%E9%80%9F%E6%9F%A5/" rel="bookmark" title="python包速查">python包速查</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Iphi Zhou"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">Iphi Zhou</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">2</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">2</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">2</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL0RJT1lG" title="https:&#x2F;&#x2F;github.com&#x2F;DIOYF"><i class="ic i-github"></i></span>
+      <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS96aG91ZGlhby1nZS1nZQ==" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;zhoudiao-ge-ge"><i class="ic i-zhihu"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/%20about%20/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>部分文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/math/" title="分类于 数学杂谈">数学杂谈</a>
+</div>
+
+    <span><a href="/2022/04/23/math/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/" title="离散数学">离散数学</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/python/" title="分类于 Python笔记">Python笔记</a>
+</div>
+
+    <span><a href="/2022/04/23/python/python%E9%80%9F%E6%9F%A5/" title="python包速查">python包速查</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Iphi Zhou @ Iphi zhou</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">5k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">5 分钟</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2022/04/23/python/python速查/',
+    favicon: {
+      show: "勿CUE",
+      hide: "主页"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功,转载请注明出处。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/wanko.model.json"},"display":{"position":"left","width":200,"height":400,"hOffset":-20,"vOffset":0},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
+</html>
